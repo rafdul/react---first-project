@@ -10,7 +10,7 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>Hello world</h2>
         <List title={['Things to do!!!', <sup key='1'>soon!</sup>]} 
               image='http://uploads.kodilla.com/bootcamp/fer/11.react/space.png' 
-              titleCol={['Animals', 'Plants', 'Minerals']}>
+              columnsTitle={['Animals', 'Plants', 'Minerals']}>
           <p>I'm planning on doing all these things sooner, rather than later!</p>
         </List>
       </main>
