@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './List.scss';
+import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 import Hero from '../Hero/Hero';
 import Column from '../Column/Column'
-import PropTypes from 'prop-types';
-import {settings} from '../../data/dataStore';
-import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
+import {settings} from '../../data/dataStore';
+import styles from './List.scss';
+
 
 class List extends React.Component {
 	state = {
@@ -17,7 +18,6 @@ class List extends React.Component {
 			description: PropTypes.node,
 			columns: PropTypes.array,
 			image: PropTypes.string.isRequired,
-			// columnsTitle: PropTypes.string,
 	}
 
 	static defaultProps = {
