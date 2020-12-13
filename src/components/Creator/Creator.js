@@ -36,10 +36,15 @@ class Creator extends React.Component {
   }
 
   handleCancel = () => {
+    if (window.confirm('Czy jesteś pewny?') == false) {
+      return;
+    };
+
     this.setState({
       value: '',
       visibleButtons: false
     });
+    
   }
 
   render() {
