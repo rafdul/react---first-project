@@ -10,18 +10,18 @@ import styles from './List.scss';
 
 class List extends React.Component {
 	state = {
-			columns: this.props.columns || [],
+		columns: this.props.columns || [],
 	}
 
 	static propTypes = {
-			title: PropTypes.node.isRequired,
-			description: PropTypes.node,
-			columns: PropTypes.array,
-			image: PropTypes.string.isRequired,
+		title: PropTypes.node.isRequired,
+		description: PropTypes.node,
+		columns: PropTypes.array,
+		image: PropTypes.string,
 	}
 
 	static defaultProps = {
-			description: settings.defaultListDescription,
+		description: settings.defaultListDescription,
 	}
 
 	addColumn(title){

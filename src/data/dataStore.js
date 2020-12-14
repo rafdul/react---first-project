@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -8,6 +9,7 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  defaultListImage: './src/vendor/alternatywne-tlo.jpg',
 };
 
 export const pageContents = {
@@ -16,54 +18,55 @@ export const pageContents = {
 };
 
 export const listData = {
+  key: 0,
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
-    {
-      key: 0,
-      title: 'Books',
-      icon: 'book',
-      cards: [
-        {
-          key: 0,
-          title: 'This Is Going to Hurt',
-        },
-        {
-          key: 1,
-          title: 'Interpreter of Maladies',
-        },
-      ],
-    },
-    {
-      key: 1,
-      title: 'Movies',
-      icon: 'film',
-      cards: [
-        {
-          key: 0,
-          title: 'Harry Potter',
-        },
-        {
-          key: 1,
-          title: 'Star Wars',
-        },
-      ],
-    },
-    {
-      key: 2,
-      title: 'Games',
-      icon: 'gamepad',
-      cards: [
-        {
-          key: 0,
-          title: 'The Witcher',
-        },
-        {
-          key: 1,
-          title: 'Skyrim',
-        },
-      ],
-    },
+      {
+        key: 0,
+        title: 'Books',
+        icon: 'book',
+        cards: [
+          {
+            key: 0,
+            title: 'This Is Going to Hurt',
+          },
+          {
+            key: 1,
+            title: 'Interpreter of Maladies',
+          },
+        ],
+      },
+      {
+        key: 1,
+        title: 'Movies',
+        icon: 'film',
+        cards: [
+          {
+            key: 0,
+            title: 'Harry Potter',
+          },
+          {
+            key: 1,
+            title: 'Star Wars',
+          },
+        ],
+      },
+      {
+        key: 2,
+        title: 'Games',
+        icon: 'gamepad',
+        cards: [
+          {
+            key: 0,
+            title: 'The Witcher',
+          },
+          {
+            key: 1,
+            title: 'Skyrim',
+          },
+        ],
+      },
   ],
 };
