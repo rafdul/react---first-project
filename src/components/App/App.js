@@ -7,18 +7,10 @@ import {pageContents, listData, settings} from '../../data/dataStore';
 
 class App extends React.Component {
   state = {
-    lists: this.props.lists || [],
+    // lists: this.props.lists || [],
+    lists: [listData],
   }
 
-  static propTypes = {
-    lists: PropTypes.string,
-    title: PropTypes.node,
-  }
-  
-  static defaultProps = {
-    description: settings.listCreatorText,
-    // image: settings.defaultListImage,
-	}
 
   addList(title){
 		this.setState(state => (
@@ -42,12 +34,10 @@ class App extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{pageContents.title}</h1>
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
-        <List {...listData} />
-        <div>
-          {this.state.lists.map(({key, ...listsProps}) => (
-					  <List key={key} {...listsProps} />
-					))}
-        </div>
+        {/* {/* <List {...listData} /> */}
+        {this.state.lists.map(({key, ...listsProps}) => (
+          <List key={key} {...listsProps} />
+        ))}
         <div>
 				  <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
         </div>
