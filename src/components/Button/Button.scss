@@ -21,15 +21,15 @@
   &.danger {
     background: $color-warning;
     &:hover {
-      background: darken($color-warning, 5%);
+      background: darken($color-warning, 20%);
     }
   }
 
   &.confirm {
-    background: #25CCF7;
-    color: #182C61;
+    // background: #25CCF7;
+    // color: #182C61;
     &:hover {
-      background:#B33771;
+      // background:#B33771;
       color: #EAB543;
       transition: 1s;
     }
