@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import List from '../List/List';
+import List from '../List/ListContainer';
 import styles from './App.scss';
 // import Creator from '../Creator/Creator';
 // import {pageContents, listData, settings} from '../../data/dataStore';
