@@ -67,7 +67,7 @@ class Creator extends React.Component {
         <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
           <Button onClick={this.handleOK}>{settings.creator.buttonOK}</Button>
           <Button onClick={this.handleCancel} variant='danger confirm'>cancel</Button>
-          {/* <Button onClick={this.handleCancelwithConfirm} variant='confirm'>{settings.creator.buttonCancel}</Button> */}
+          {/* <Button onClick={this.handleCancelwithConfirm} variant='danger confirm'>{settings.creator.buttonCancel}</Button> */}
         </div>
       </div>
     );

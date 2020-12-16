@@ -26,11 +26,6 @@ const Button = ({variant = '', onClick, ...otherProps}) => {
   );
 };
 
-Button.propTypes = {
-  variant: PropTypes.string,
-  onClick: PropTypes.node,
-};
-
 // rozwiązanie ze skryptu
 // const Button = ({variant = '', ...otherProps}) => (
 //   <button 
@@ -38,5 +33,10 @@ Button.propTypes = {
 //     className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}
 //   />
 // );
+
+Button.propTypes = {
+  variant: PropTypes.string,
+  onClick: PropTypes.func,
+};
 
 export default Button;
