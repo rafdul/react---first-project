@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 import Hero from '../Hero/Hero';
-import Column from '../Column/Column';
+import Column from '../Column/ColumnContainer';
 // import Creator from '../Creator/Creator';
 import {settings} from '../../data/dataStore';
 import styles from './List.scss';
