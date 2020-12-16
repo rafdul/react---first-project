@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Button.scss';
 
 // rozwiązanie zaproponowane przez Kamila
@@ -18,11 +19,16 @@ const Button = ({variant = '', onClick, ...otherProps}) => {
 
   return (
     <button 
-    {...otherProps} 
-    onClick={onButtonClick}
-    className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}
+      {...otherProps} 
+      onClick={onButtonClick}
+      className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}
     />
-  )
+  );
+};
+
+Button.propTypes = {
+  variant: PropTypes.string,
+  onClick: PropTypes.node,
 };
 
 // rozwiązanie ze skryptu
