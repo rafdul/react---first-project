@@ -6,7 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "lint": "eslint src/",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "git push -f heroku master",
+    "heroku-postbuild": "npm run build",
+    "start_server": "http-server dist/ -d false -g"
   },
   "husky": {
     "hooks": {
@@ -20,6 +23,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dist": "^0.1.2",
+    "http-server": "^0.12.3",
     "prop": "^0.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
