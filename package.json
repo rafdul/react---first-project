@@ -7,9 +7,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "lint": "eslint src/",
     "build": "webpack --mode production",
-    "deploy": "git push -f heroku master",
-    "heroku-postbuild": "npm run build",
-    "start_server": "http-server dist/ -d false -g"
+    "deploy": "http-server dist"
   },
   "husky": {
     "hooks": {
