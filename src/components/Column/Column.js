@@ -11,6 +11,7 @@ import {Droppable} from 'react-beautiful-dnd';
 const Column = (props) => {
   
   const {title, icon, cards, addCard, id} = props;
+  cards.sort((a, b) => a.index - b.index);
   
   return (
     <section className={styles.component}>
@@ -58,11 +59,16 @@ export default Column;
 // KOMPONENT W WERSJI KLASOWEJ
 // class Column extends React.Component {
 
+//   state = {
+//     card: this.props.cards || [],
+//   }
+
 //   static propTypes = {
 //     title: PropTypes.string,
 //     icon: PropTypes.string,
 //     cards: PropTypes.array,
 //     addCard: PropTypes.func,
+//     id: PropTypes.string,
 //   }
 
 //   static defaultProps = {
@@ -71,18 +77,28 @@ export default Column;
 //   }
 
 //   render() {
-//     const {title, icon, cards, addCard} = this.props;
+//     const {title, icon, cards, addCard, id} = this.props;
 //     return (
 //       <section className={styles.component}>
 //         <h3 className={styles.title}>
 //           <span className={styles.icon}><Icon name={icon} /></span>
 //           {title}
 //         </h3>
-//         <div>
-//           {cards.map(cardData => (
-//             <Card key={cardData.id} {...cardData} />
-//           ))}
-//         </div>
+//         <Droppable droppableId={id}>
+//           {provided => (
+//             <div
+//               className={styles.cards}
+//               {...provided.droppableProps}
+//               ref={provided.innerRef}
+//             >
+//               {cards.map(cardData => (
+//                 <Card key={cardData.id} {...cardData} />
+//               ))}
+
+//               {provided.placeholder}
+//             </div>
+//           )}
+//         </Droppable>
 //         <div>
 //           <Creator text={settings.cardCreatorText} action={addCard}/>
 //         </div>
@@ -91,5 +107,6 @@ export default Column;
 //   }
 // }
   
+// export default Column;
 
   

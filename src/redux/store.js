@@ -18,7 +18,6 @@ const reducers = {
   columns: columnsReducer,
   cards: cardsReducer,
   searchString: searchStringReducer,
-
 };
 
 // add blank reducers for initial state properties without reducers

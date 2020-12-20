@@ -8,8 +8,8 @@ const mapStateToProps = state => ({
   lists: state.lists,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  moveCard: payload => dispatch(createAction_moveCard({payload})),
+const mapDispatchToProps = dispatch => ({
+  moveCard: payload => dispatch(createAction_moveCard(payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
