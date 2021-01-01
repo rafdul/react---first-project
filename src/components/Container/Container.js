@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Container.scss';
 
-
 const Container = props => {
 
   const {children} = props;

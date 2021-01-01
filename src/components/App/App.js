@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import List from '../List/ListContainer';
 import styles from './App.scss';
-import Creator from '../Creator/Creator';
+// import Creator from '../Creator/Creator';
 import {listData, settings} from '../../data/dataStore';
 import Search from '../Search/SearchContainer';
 import {DragDropContext} from 'react-beautiful-dnd';
@@ -93,9 +93,11 @@ class App extends React.Component {
         {/* {this.state.lists.map(({key, ...listsProps}) => (
           <List key={key} {...listsProps} />
         ))} */}
-        <div>
+
+        {/* DODAWANIE NOWEJ LISTY */}
+        {/* <div>
 				  <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
-        </div>
+        </div> */}
       </main>
     );
   }
