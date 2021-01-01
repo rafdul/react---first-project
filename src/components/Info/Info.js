@@ -1,10 +1,23 @@
 import React from 'react';
 import Container from '../Container/Container';
+import Hero from '../Hero/Hero';
+import {infoContents} from '../../data/dataStore';
+
 
 const Info = () => (
   <Container>
-    <h2>Info</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <Hero titleText={infoContents.title} imageMain={infoContents.image} />
+    {infoContents.contentInfo}
+    {infoContents.contentContact}
+    <h2>{infoContents.contentInfoTitle}</h2>
+    <p>{infoContents.contentInfoText}</p>
+    <h2>{infoContents.contentContactTitle}</h2>
+    <p>{infoContents.contentContactText}</p>
+    <ul>
+      <li>{infoContents.contentContactTel}</li>
+      <li>{infoContents.contentContactEmail}</li>
+      <li>{infoContents.contentContactCountry}</li>
+    </ul>
   </Container>
 );
 

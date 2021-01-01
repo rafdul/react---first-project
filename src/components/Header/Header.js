@@ -3,8 +3,7 @@ import {NavLink, Link} from 'react-router-dom';
 import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
-
-
+import {settings, faqContents, infoContents, pageContents} from '../../data/dataStore';
 
 class Header extends React.Component {
 
@@ -14,11 +13,12 @@ class Header extends React.Component {
         <Container>
           <div className={styles.wrapper}>
             <Link className={styles.logo} to='/'>
-              <Icon name='far fa-comment-dots' />
+              <Icon name={settings.defaultHeaderIcon} />
             </Link>
             <nav>
-              <NavLink exact to='/'>Home</NavLink>
-              <NavLink exact to='/info'>Info</NavLink>
+              <NavLink exact to='/' activeClassName='active'>{pageContents.categoryTitle}</NavLink>
+              <NavLink exact to='/info' activeClassName='active'>{infoContents.categoryTitle}</NavLink>
+              <NavLink exact to='/faq' activeClassName='active'>{faqContents.categoryTitle}</NavLink>
             </nav>
           </div>
         </Container>

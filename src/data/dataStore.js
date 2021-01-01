@@ -14,11 +14,38 @@ export const settings = {
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
   defaultListImage: './src/vendor/alternatywne-tlo.jpg',
+  defaultHeaderIcon: 'far fa-comment-dots',
 };
 
 export const pageContents = {
+  categoryTitle: 'Info',
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+};
+
+export const infoContents = {
+  categoryTitle: 'Info',
+  title: 'About us',
+  image: 'src/vendor/pexels-pew-nguyen.jpg',
+  contentInfoTitle: 'Info',
+  contentInfoText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  contentContactTitle: 'Contact',
+  contentContactText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+  contentContactTel: 'tel: 123 456 789',
+  contentContactEmail: 'info@info.com',
+  contentContactCountry: 'New Zeland',
+};
+
+export const faqContents = {
+  categoryTitle: 'FAQ',
+  title: 'Frequently Asked Questions',
+  image: 'src/vendor/light-bulb.jpg',
+  questionTitle1: '1. How to do?',
+  questionContent1: 'Nullam suscipit dolor. Morbi scelerisque justo vulputate lectus. In cursus justo nibh pulvinar ligula, in augue.',
+  questionTitle2: '2. Why to do?',
+  questionContent2: 'Proin luctus. Aenean faucibus orci elit, sit amet neque. Cras ut orci ac posuere cubilia Curae, Sed dolor. Nullam fermentum wisi, mollis luctus laoreet. Donec lectus nulla vitae ornare id, urna. Aenean quis consectetuer arcu nec lectus sit amet, aliquam imperdiet.',
+  questionTitle3: '3. Where to go?',
+  questionContent3: 'Donec libero odio tellus wisi, fermentum pede, molestie justo sem, eleifend erat volutpat. Vivamus nibh malesuada tristique, mauris tincidunt sit amet, est. Curabitur scelerisque condimentum nec, scelerisque a, convallis libero. Donec eu mi leo nec nisl. Vestibulum vestibulum, dolor lacus, elementum vitae, pellentesque non, ipsum.',
 };
 
 export const listData = {
