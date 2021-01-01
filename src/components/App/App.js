@@ -51,7 +51,6 @@ class App extends React.Component {
           result.destination.droppableId != result.source.droppableId
         )
       ){
-        // moveCard(result);
         moveCard({
           id: result.draggableId,
           dest: {
@@ -77,6 +76,12 @@ class App extends React.Component {
           {lists.map(listData => (
             <List key={listData.id} {...listData} />
           ))}
+          {/* {lists.map(({...listData}) => (
+            <List key={listData.id} {...listData} />
+          ))} */}
+          {/* {this.state.lists.map(({id, ...listData}) => (
+            <List key={id} {...listData} />
+          ))} */}
         </DragDropContext>
 
         {/* kod z modułu 16 */}

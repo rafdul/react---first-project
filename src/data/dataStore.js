@@ -83,6 +83,7 @@ export const listData = {
 
 const lists = [
   {
+    key: 0,
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
