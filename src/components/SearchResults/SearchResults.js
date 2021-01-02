@@ -5,6 +5,7 @@ import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import Card from '../Card/Card';
 import Hero from '../Hero/Hero';
+import {searchingContent} from '../../data/dataStore';
 
 class SearchResults extends React.Component {
   static propTypes = {
@@ -15,14 +16,13 @@ class SearchResults extends React.Component {
   }
 
   render () {
-    const {title, icon, cards} = this.props;
+    const {cards} = this.props;
     return (
       <Container>
-        <Hero titleText='Wynik wyszukiwania' />
+        <Hero titleText={searchingContent.title} imageMain={searchingContent.image} />
         <section className={styles.component}>
           <h3 className={styles.title}>
-            <span className={styles.icon}><Icon name={icon} /></span>
-            {title}
+            <span className={styles.icon}><Icon name={searchingContent.icon} /></span>
           </h3>
           <div className={styles.cards}>
             {cards.map(cardData => (

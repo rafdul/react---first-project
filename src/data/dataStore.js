@@ -48,6 +48,12 @@ export const faqContents = {
   questionContent3: 'Donec libero odio tellus wisi, fermentum pede, molestie justo sem, eleifend erat volutpat. Vivamus nibh malesuada tristique, mauris tincidunt sit amet, est. Curabitur scelerisque condimentum nec, scelerisque a, convallis libero. Donec eu mi leo nec nisl. Vestibulum vestibulum, dolor lacus, elementum vitae, pellentesque non, ipsum.',
 };
 
+export const searchingContent = {
+  title: 'Your Search Results',
+  image: 'https://cdn.pixabay.com/photo/2017/03/08/20/12/telescope-2127704_960_720.jpg',
+  icon: 'fas fa-search',
+};
+
 export const listData = {
   key: 0,
   title: 'Things to do <sup>soon!</sup>',
