@@ -18,7 +18,7 @@ export const settings = {
 };
 
 export const pageContents = {
-  categoryTitle: 'Info',
+  categoryTitle: 'Home',
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };

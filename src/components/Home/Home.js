@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import List from '../List/ListContainer';
+import ListLink from '../ListLink/ListLink';
 import styles from './Home.scss';
 // import Creator from '../Creator/Creator';
 import {listData, settings} from '../../data/dataStore';
-import Search from '../Search/SearchContainer';
+// import Search from '../Search/SearchContainer';
 import {DragDropContext} from 'react-beautiful-dnd';
 
 class Home extends React.Component {
@@ -70,11 +70,11 @@ class Home extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search />
+        {/* <Search /> */}
         {/* kod do przenoszenia kart */}
         <DragDropContext onDragEnd={moveCardHandler}>
           {lists.map(listData => (
-            <List key={listData.id} {...listData} />
+            <ListLink key={listData.id} {...listData} />
           ))}
           {/* {lists.map(({...listData}) => (
             <List key={listData.id} {...listData} />
