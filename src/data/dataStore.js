@@ -110,21 +110,21 @@ export const listData = {
 
 const lists = [
   {
-    key: 0,
+    // key: 0,
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
-    key: 1,
+    // key: 1,
     id: 'list-2',
     title: 'Things to do <sup>next week!</sup>',
     description: 'Interesting things I do not want to do!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
-    key: 2,
+    // key: 2,
     id: 'list-3',
     title: 'Things to do <sup>next year!</sup>',
     description: 'Not interesting things!',

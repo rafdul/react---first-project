@@ -1,33 +1,36 @@
 import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
-import {Draggable} from 'react-beautiful-dnd';
+// import {Draggable} from 'react-beautiful-dnd';
 
 
 // KOMPONENT W WERSJI FUNKCYJNEJ
 const Card = (props) => {
-  const {title, id, index} = props;
+  const {title /*, id, index*/} = props;
 
   return (
-    <Draggable draggableId={id} index={index}>
-      {(provided) => (
-        <article
-          className={styles.component}
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}
-          ref={provided.innerRef}
-        >
-          {title}
-        </article>
-      )}
-    </Draggable>
+    // <Draggable draggableId={id} index={index}>
+    //   {(provided) => (
+    //     <article
+    //       className={styles.component}
+    //       {...provided.draggableProps}
+    //       {...provided.dragHandleProps}
+    //       ref={provided.innerRef}
+    //     >
+    //       {title}
+    //     </article>
+    //   )}
+    // </Draggable>
+    <article className={styles.component}>
+      <p className={styles.subtitle}>{title}</p>
+    </article>
   );
 };
 
 Card.propTypes = {
   title: PropTypes.string,
-  id: PropTypes.string,
-  index: PropTypes.number,
+  // id: PropTypes.string,
+  // index: PropTypes.number,
 };
 
 export default Card;
