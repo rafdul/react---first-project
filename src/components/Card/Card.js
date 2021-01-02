@@ -22,7 +22,7 @@ const Card = (props) => {
     //   )}
     // </Draggable>
     <article className={styles.component}>
-      <p className={styles.subtitle}>{title}</p>
+      <h4 className={styles.subtitle}>{title}</h4>
     </article>
   );
 };
