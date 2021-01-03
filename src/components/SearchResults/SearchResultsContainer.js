@@ -8,6 +8,16 @@ const mapStateToProps = (state, props) => {
   const cards = getCardsFromSearch(state, searchString);
   const id = shortid.generate();
 
+  /*change searchedCard status for all cards to false*/
+  state.cards.map(card => {
+    card.searchedCard = false;
+  });
+
+  /*change searchedCard status for cards (getCardsFromSearch) to true */
+  cards.map(card => {
+    card.searchedCard = true;
+  });
+
   const columns = state.columns.filter((columns) => {
     return cards.map(card => {
       if(columns.id === card.columnId) {

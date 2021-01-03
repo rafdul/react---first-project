@@ -26,7 +26,8 @@ export const pageContents = {
 export const infoContents = {
   categoryTitle: 'Info',
   title: 'About us',
-  image: 'src/vendor/pexels-pew-nguyen.jpg',
+  // image: 'src/vendor/pexels-pew-nguyen.jpg',
+  image: 'https://images.pexels.com/photos/239548/pexels-photo-239548.jpeg?cs=srgb&dl=pexels-pew-nguyen-239548.jpg&fm=jpg',
   contentInfoTitle: 'Info',
   contentInfoText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
   contentContactTitle: 'Contact',
@@ -39,7 +40,8 @@ export const infoContents = {
 export const faqContents = {
   categoryTitle: 'FAQ',
   title: 'Frequently Asked Questions',
-  image: 'src/vendor/light-bulb.jpg',
+  // image: 'src/vendor/light-bulb.jpg',
+  image: 'https://cdn.pixabay.com/photo/2014/10/26/14/36/light-bulb-503881_960_720.jpg',
   questionTitle1: '1. How to do?',
   questionContent1: 'Nullam suscipit dolor. Morbi scelerisque justo vulputate lectus. In cursus justo nibh pulvinar ligula, in augue.',
   questionTitle2: '2. Why to do?',
@@ -127,14 +129,14 @@ const lists = [
     id: 'list-2',
     title: 'Things to do <sup>next week!</sup>',
     description: 'More interesting things I want to go over!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://images.pexels.com/photos/356372/pexels-photo-356372.jpeg?cs=srgb&dl=pexels-pixabay-356372.jpg&fm=jpg',
   },
   {
     // key: 2,
     id: 'list-3',
     title: 'Things to do <sup>next year!</sup>',
     description: 'Very boring things!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://images.pexels.com/photos/3951845/pexels-photo-3951845.jpeg?cs=srgb&dl=pexels-castorly-stock-3951845.jpg&fm=jpg',
   },
 ];
 
