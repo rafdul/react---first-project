@@ -62,7 +62,7 @@ class SearchResults extends React.Component {
                   {cards.map(cardData => {
                     return (
                       <Link to={`/list/${cardData.listId}`} className={styles.link} key={cardData.id}>
-                        <Card key={cardData.id} {...cardData} />
+                        <Card key={cardData.id} {...cardData} dragDisable={true} />
                       </Link>
                     );
                   })}

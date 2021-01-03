@@ -1,10 +1,12 @@
 import {connect} from 'react-redux';
 import SearchResults from './SearchResults';
-import {getCardsFromSearch} from '../../redux/cardsRedux';
+import {getCardsFromSearch, createAction_moveCard} from '../../redux/cardsRedux';
+import shortid from 'shortid';
 
 const mapStateToProps = (state, props) => {
   const searchString = props.match.params.searchString;
   const cards = getCardsFromSearch(state, searchString);
+  const id = shortid.generate();
 
   const columns = state.columns.filter((columns) => {
     return cards.map(card => {
@@ -18,9 +20,14 @@ const mapStateToProps = (state, props) => {
 
   return {
     cards, 
-    columns, 
+    columns,
+    id, 
   };
 };
 
+const mapDispatchToProps = (dispatch) => ({
+  moveCard: payload => dispatch(createAction_moveCard(payload)),
+});
 
-export default connect(mapStateToProps)(SearchResults);
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);

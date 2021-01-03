@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import {Draggable} from 'react-beautiful-dnd';
 
 
+
 // KOMPONENT W WERSJI FUNKCYJNEJ
 const Card = (props) => {
-  const {title, id, index} = props;
+  const {title, id, index, dragDisable} = props;
 
   return (
-    <Draggable draggableId={id} index={index}>
+    <Draggable draggableId={id} index={index} isDragDisabled={dragDisable}>
       {(provided) => (
         <article
           className={styles.component}
@@ -31,6 +32,7 @@ Card.propTypes = {
   title: PropTypes.string,
   id: PropTypes.string,
   index: PropTypes.number,
+  dragDisable: PropTypes.bool,
 };
 
 export default Card;
