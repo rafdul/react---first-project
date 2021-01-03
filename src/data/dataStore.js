@@ -126,14 +126,14 @@ const lists = [
     // key: 1,
     id: 'list-2',
     title: 'Things to do <sup>next week!</sup>',
-    description: 'Interesting things I do not want to do!',
+    description: 'More interesting things I want to go over!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
     // key: 2,
     id: 'list-3',
     title: 'Things to do <sup>next year!</sup>',
-    description: 'Not interesting things!',
+    description: 'Very boring things!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
