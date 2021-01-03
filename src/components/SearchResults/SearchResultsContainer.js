@@ -6,14 +6,6 @@ const mapStateToProps = (state, props) => {
   const searchString = props.match.params.searchString;
   const cards = getCardsFromSearch(state, searchString);
 
-  state.cards.map(card => {
-    card.searchedCard = false;
-  });
-
-  cards.map(card => {
-    card.searchedCard = true;
-  });
-
   const columns = state.columns.filter((columns) => {
     return cards.map(card => {
       if(columns.id === card.columnId) {
@@ -29,5 +21,6 @@ const mapStateToProps = (state, props) => {
     columns, 
   };
 };
+
 
 export default connect(mapStateToProps)(SearchResults);
