@@ -4,7 +4,6 @@ import ListLink from '../ListLink/ListLink';
 import styles from './Home.scss';
 // import Creator from '../Creator/Creator';
 // import {listData, settings} from '../../data/dataStore';
-// import Search from '../Search/SearchContainer';
 // import {DragDropContext} from 'react-beautiful-dnd';
 
 class Home extends React.Component {
@@ -70,7 +69,6 @@ class Home extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        {/* <Search /> */}
         {/* kod do przenoszenia kart */}
         {/* <DragDropContext onDragEnd={moveCardHandler}>
           {lists.map(listData => (
